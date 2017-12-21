@@ -18,7 +18,7 @@ SPARK_URL=http://apache.mirrors.tds.net/spark/spark-2.2.0/spark-2.2.0-bin-hadoop
 SPARK_FOLDER_NAME=spark-2.2.0-bin-hadoop2.7.tgz
 
 # Find the proper md5 hash from the Apache site
-SPARK_MD5=50e73f255f9bde50789ad5bd657c7a71
+SPARK_MD5=1715B661BDF33B40C98B3DAA7837F690
 
 # Print Disclaimer prior to running script
 echo "DISCLAIMER: This is an automated script for installing Spark but you should feel responsible for what you're doing!"
