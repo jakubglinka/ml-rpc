@@ -7,6 +7,12 @@ name = "pypi"
 
 [packages]
 
+jupyter = "*"
+"h2o" = "*"
+"h2o-pysparkling-2.2" = "*"
+"py4j" = "*"
+pandas = "*"
+plotnine = "*"
 
 
 [dev-packages]
@@ -15,4 +21,4 @@ name = "pypi"
 
 [requires]
 
-python_version = "3.6"
+python_version = "3.5"
