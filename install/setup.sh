@@ -18,7 +18,7 @@ SPARK_URL=http://apache.mirrors.tds.net/spark/spark-2.2.0/spark-2.2.0-bin-hadoop
 SPARK_FOLDER_NAME=spark-2.2.0-bin-hadoop2.7.tgz
 
 # Find the proper md5 hash from the Apache site
-SPARK_MD5=1715B661BDF33B40C98B3DAA7837F690
+SPARK_MD5=1715b661bdf33b40c98b3daa7837f690
 
 # Print Disclaimer prior to running script
 echo "DISCLAIMER: This is an automated script for installing Spark but you should feel responsible for what you're doing!"
@@ -222,4 +222,9 @@ pip install pipenv
 sudo apt install htop
 
 echo "INSTALL COMPLETE"
-echo "Please refer to Step 4 at https://github.com/zipfian/spark-install for testing your installation"
+
+echo "You need also manualy export following environment variables:"
+echo "export PYSPARK_PYTHON=/home/ubuntu/.local/share/virtualenvs/ubuntu-xxxx/bin/python3.5"
+echo "export AWS_ACCESS_KEY_ID=xxxx and export AWS_SECRET_ACCESS_KEY=xxxx"
+
+
