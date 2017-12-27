@@ -64,6 +64,8 @@ else
     fi
 fi
 
+mkdir /home/ubuntu/spark-warehouse
+
 if [[ -d $HOME/scripts ]];
 then
     # Create jupyspark.sh script in your scripts folder
@@ -74,10 +76,10 @@ then
         export PYSPARK_DRIVER_PYTHON_OPTS=\"notebook --NotebookApp.open_browser=True --NotebookApp.ip='localhost' --NotebookApp.port=8888\"
 
         \${SPARK_HOME}/bin/pyspark \
-        --master local[4] \
+        --master local[16] \
         --executor-memory 1G \
-        --driver-memory 1G \
-        --conf spark.sql.warehouse.dir=\"file:///tmp/spark-warehouse\" \
+        --driver-memory 16G \
+        --conf spark.sql.warehouse.dir=\"file:///home/ubuntu/spark-warehouse\" \
         --packages com.databricks:spark-csv_2.11:1.5.0 \
         --packages com.amazonaws:aws-java-sdk-pom:1.10.34 \
         --packages org.apache.hadoop:hadoop-aws:2.7.3" > $HOME/scripts/jupyspark.sh
