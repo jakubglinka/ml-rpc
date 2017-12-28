@@ -13,6 +13,7 @@ jupyter = "*"
 "py4j" = "*"
 pandas = "*"
 plotnine = "*"
+scipy = "*"
 
 
 [dev-packages]
