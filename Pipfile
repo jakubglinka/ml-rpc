@@ -14,6 +14,7 @@ jupyter = "*"
 pandas = "*"
 plotnine = "*"
 scipy = "*"
+scikit-learn = "*"
 
 
 [dev-packages]
